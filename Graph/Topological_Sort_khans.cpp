@@ -38,7 +38,7 @@ void Graph::tSort()
 		for(auto &v:u)
 			indegree[v]++;
 		
-	for(int i=1;i<=size;i++)   // Create an queue and enqueue all vertices with indegree 0
+	for(int i=1;i<=size;i++)   // Push all vertices in min_heap with indegree 0
 		if(indegree[i]==0)pq.push(i);
 	
 	int vertex;
