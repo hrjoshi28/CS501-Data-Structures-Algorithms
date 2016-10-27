@@ -33,12 +33,12 @@ void Graph::tSort()
 	vector<int> indegree(size+1,0);
 	
 	// Traverse adjacency lists to fill indegrees of
-  // vertices.  This step takes O(V+E) time
+       // vertices.  This step takes O(V+E) time
 	for(auto &u:Alist)
 		for(auto &v:u)
 			indegree[v]++;
 		
-	for(int i=1;i<=size;i++)
+	for(int i=1;i<=size;i++)   // Create an queue and enqueue all vertices with indegree 0
 		if(indegree[i]==0)pq.push(i);
 	
 	int vertex;
