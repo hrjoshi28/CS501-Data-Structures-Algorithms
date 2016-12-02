@@ -4,8 +4,6 @@
 * output : max_flow=4
 */
 
-
-
 #include<iostream>
 #include<queue>
 #include<limits.h>
