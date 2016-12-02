@@ -1,7 +1,9 @@
 /*
 *Max_flow (Adjacency Matrix)
 *Input Graph : mit lecture example..
-* output : max_flow=4
+*Output : max_flow=4
+*Complexity : BFS takes O(V^2) time, 
+*             Therefore above implementation has O(E(V^3)) complexity  ==>> VE*(V^2)  //(VE) TIMES BFS 
 */
 
 #include<iostream>
