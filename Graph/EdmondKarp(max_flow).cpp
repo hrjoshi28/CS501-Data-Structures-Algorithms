@@ -54,7 +54,7 @@ int ford_fulkerson_compute(int mat[V][V],int source,int sink)
             parent_node=path[curr_node];
             path_flow=min(path_flow, mat[parent_node][curr_node]);
         }
-        for(curr_node=sink; curr_node != source; curr_node = path[curr_node])
+        for(curr_node=sink; curr_node != source; curr_node = path[curr_node])  //update the residual graph ..
         {
             parent_node = path[curr_node];
             mat[parent_node][curr_node] -= path_flow;
